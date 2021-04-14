@@ -83,8 +83,8 @@ if ($products_in_cart) {
         $subtotal += (float)$product['price'] * (int)$products_in_cart[$product['id']];
     }
     
-    $products['zodiac']=$_SESSION['cart']['zodiac'];
-    $products['colour']=$_SESSION['cart']['colour'];
+    //$products['zodiac']=$_SESSION['cart']['zodiac'];
+    //$products['colour']=$_SESSION['cart']['colour'];
 }
 
 
@@ -130,7 +130,7 @@ if ($products_in_cart) {
                         <a href="index.php?page=product&id=<?=$product['id']?>"><?=$product['name']?></a>
 <!-- THE TWO ECHO STATEMENTS BELOW CAUSE ME TO HAVE TO LOCATE THE PLACE ORDER BUTTON ABOVE THE FORM -->
                        <?php
-                            echo ', ' . 'Zodiac symbol: ' . $products['zodiac'];
+                            //echo ', ' . 'Zodiac symbol: ' . $products['zodiac'];
                             echo ' , ' . 'Item colour: ' . $products['colour'];
                         ?>
                         <br>
