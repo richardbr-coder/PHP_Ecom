@@ -349,3 +349,15 @@ footer {
 	margin: 100%;
 	border-radius: 15px;
 }
+
+.login{
+	padding:10px; 
+	margin:10px;
+	background-color:gray;
+	color:white;
+	border-radius:5px;
+}
+
+.login:hover{
+	color:blue;
+}

@@ -96,10 +96,12 @@ if ($products_in_cart) {
 
 <div class="cart content-wrapper">
     <h1>Shopping Cart</h1>
-    <p>Already have and account?</p>
-    <input type="submit" value="Login" name="Login">
+    
+    
+    <p style="float:right;">Already have and account? <input style="margin-left:10px; float:right;" type="submit" value="Login" name="Login"></p>
 
     <form action="index.php?page=placeorder" method="post">
+        
         <table>
             <thead>
                 <tr>
@@ -135,7 +137,7 @@ if ($products_in_cart) {
                 </tr>
             </tbody>
         </table>
-        </br></br></br>
+        </></br></br>
         <h1>Confirm your order details and place order below</h1>
         <table>
             <thead>
