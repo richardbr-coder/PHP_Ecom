@@ -90,7 +90,7 @@ header .link-icons a span {
 main .featured {
 	display: flex;
 	flex-direction: column;
-	background-image: url(/imgs/featured-image.jpg);
+	background-image: url(/imgs/photo.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 500px;
@@ -341,4 +341,11 @@ footer {
 	border-top: 1px solid #EEEEEE;
 	padding: 20px 0;
 	width: 100%;
+}
+
+.head-style{
+	padding: 50px;
+	background-color: rgba(66, 66, 66, 0.582);
+	margin: 100%;
+	border-radius: 15px;
 }

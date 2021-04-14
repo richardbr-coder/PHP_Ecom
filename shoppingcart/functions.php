@@ -35,7 +35,7 @@ echo <<<EOT
 	<body>
         <header>
             <div class="content-wrapper">
-                <h1>ZODIAC CUSTOMS</h1>
+                <h1>SAMPLE PROJECT</h1>
                 <nav>
                     <a href="index.php">Home</a>
                     <a href="index.php?page=products">Products</a>
@@ -58,7 +58,7 @@ echo <<<EOT
         </main>
         <footer>
             <div class="content-wrapper">
-                <p>&copy; $year, ZODIAC CUSTOMS INC</p>
+                <p>&copy; $year, Sample Project INC</p>
             </div>
         </footer>
         <script src="script.js"></script>

@@ -11,8 +11,10 @@ $recently_added_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <?=template_header('Home')?>
 
 <div class="featured">
-    <h2>Got Custom?</h2>
-    <p>Add your favorite Chinese Zodiac to one of our many customizable items!</p>
+    <div class="head-style">
+        <h2>Got Custom?</h2>
+        <p>Welcome to my sample of a PHP store! </p>
+    </div>
 </div>
 <div class="recentlyadded content-wrapper">
     <h2>Recently Added Products</h2>
