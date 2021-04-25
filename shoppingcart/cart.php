@@ -92,7 +92,7 @@ if ($products_in_cart) {
 
 <?=template_header('Cart')?>
 
-<div class="cart content-wrapper">
+<div class="container cart content-wrapper">
     <h1>Shopping Cart</h1>
     <form action="index.php?page=cart" method="post">
         
@@ -113,14 +113,14 @@ if ($products_in_cart) {
                     <td>Total</td>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="">
                 <?php if (empty($products)): ?>
                 <tr>
                     <td colspan="5" style="text-align:center;">You have no products added in your Shopping Cart</td>
                 </tr>
                 <?php else: ?>
                 <?php foreach ($products as $product): ?>
-                <tr>
+                <tr class="">
                     <td class="img">
                         <a href="index.php?page=product&id=<?=$product['id']?>">
                             <img src="/imgs/<?=$product['img']?>" width="50" height="50" alt="<?=$product['name']?>">

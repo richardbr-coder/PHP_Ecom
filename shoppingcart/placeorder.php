@@ -91,7 +91,7 @@ if ($products_in_cart) {
     <p>Thank you for ordering with us, we'll contact you by email with your order details.</p>
 </div>
 
-<div class="cart content-wrapper">
+<div class="container cart content-wrapper">
 
     <h1>Confirm your order details and place order below</h1>
     <table>
@@ -109,7 +109,7 @@ if ($products_in_cart) {
                 </div>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="">
             <?php if (empty($products)) : ?>
                 <tr>
                     <td colspan="5" style="text-align:center;">You have no products added in your Shopping Cart</td>

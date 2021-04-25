@@ -2,9 +2,9 @@
 function pdo_connect_mysql() {
     // MySQL details
     $DATABASE_HOST = 'localhost';
-    $DATABASE_USER = 'codem385_codedad';
-    $DATABASE_PASS = 'ER67fd45';
-    $DATABASE_NAME = 'codem385_shoppingcart';
+    $DATABASE_USER = 'root';
+    $DATABASE_PASS = 'root';
+    $DATABASE_NAME = 'shoppingcart';
     try {
     	return new PDO('mysql:host=' . $DATABASE_HOST . ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS);
     } catch (PDOException $exception) {
@@ -31,19 +31,31 @@ echo <<<EOT
 		<title>$title</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.1/tailwind.min.css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G4X9QB913Y"></script>
+      
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-G4X9QB913Y');
+        </script>
+        
 	</head>
 	<body>
         <header>
-            <div class="content-wrapper">
-                <h1>SAMPLE PROJECT</h1>
-                <nav>
-                    <a href="index.php">Home</a>
-                    <a href="index.php?page=products">Products</a>
+            <div class="test col0 content-wrapper">
+                <h1 class="test col1 text-center margin-left">SAMPLE PROJECT</h1>
+                <nav class="test col2">
+                    <a class="col1" href="index.php">Home</a>
+                    <a class="col1" href="index.php?page=products">Products</a>
                 </nav>
-                <div class="link-icons">
-                    <a href="index.php?page=cart">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span>$num_items_in_cart</span>
+                <div class="margin-right test col3 link-icons">
+                    <a class="" href="index.php?page=cart">
+                        <i class=" fas fa-shopping-cart"></i>
+                        <span class="">$num_items_in_cart</span>
 					</a>
                 </div>
             </div>

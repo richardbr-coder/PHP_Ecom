@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5 {
 	color: #394352;
 }
 .content-wrapper {
-	width: 1050px;
+	/* width: 1050px; */
 	margin: 0 auto;
 }
 header {
@@ -83,7 +83,6 @@ header .link-icons a span {
 	width: 16px;
 	height: 16px;
 	font-weight: bold;
-	position: absolute;
 	top: 22px;
 	right: 0;
 }
@@ -101,7 +100,7 @@ main .featured {
 main .featured h2 {
 	display: inline-block;
 	margin: 0;
-	width: 1050px;
+	/* width: 1050px; */
 	font-family: Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
 	font-size: 68px;
 	color: #FFFFFF;
@@ -110,7 +109,7 @@ main .featured h2 {
 main .featured p {
 	display: inline-block;
 	margin: 0;
-	width: 1050px;
+	/* width: 1050px; */
 	font-size: 24px;
 	color: #FFFFFF;
 }
@@ -360,4 +359,66 @@ footer {
 
 .login:hover{
 	color:blue;
+}
+
+@media only screen and (min-width: 1026px) {
+	.margin-left{
+		margin-left: 40px;
+	}
+	.margin-right{
+		margin-right: 40px;
+	}
+	.center{
+		justify-content: center;
+		margin-top: 50px;
+	}
+}
+
+@media only screen and (max-width: 1026px) {
+    .test{
+        display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		font-size: xx-large;
+
+    }
+	.col1{
+		font-size: 60px;
+		order: 0;
+	}
+	.col2{
+		order: 0;
+	}
+	.col3{
+		order: 0;
+		margin-bottom: 40px;
+		margin-top: 25px;
+		top:0;
+	}
+	.col4{
+		font-size: 60px;
+		order: 0;
+	}
+	.space{
+		margin:50px;
+	}
+	.big-text{
+		font-size: 60px;
+	}
+
+	.big-text2{
+		font-size: 40px;
+	}
+
+	.big-text3{
+		font-size: 30px;
+	}
+
+	.mob-img-size{
+		width:600px; 
+		height:600px;
+	}
 }

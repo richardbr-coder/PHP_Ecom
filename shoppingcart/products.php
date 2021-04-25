@@ -17,18 +17,18 @@ $total_products = $pdo->query('SELECT * FROM products')->rowCount();
 
 <?=template_header('Products')?>
 
-<div class="products content-wrapper">
-    <h1>Products</h1>
-    <p><?=$total_products?> Products</p>
-    <div class="products-wrapper">
+<div class="text-center products content-wrapper">
+    <h6 class="big-text text-center">Products</h6>
+    <p class="big-text"><?=$total_products?> Products</p>
+    <div class="test col4 products-wrapper">
         <?php foreach ($products as $product): ?>
         <a href="index.php?page=product&id=<?=$product['id']?>" class="product">
             <img src="/imgs/<?=$product['img']?>" width="200" height="200" alt="<?=$product['name']?>">
-            <span class="name"><?=$product['name']?></span>
-            <span class="price">
+            <span class="big-text name"><?=$product['name']?></span>
+            <span class="big-text price">
                 &dollar;<?=$product['price']?>
                 <?php if ($product['rrp'] > 0): ?>
-                <span class="rrp">&dollar;<?=$product['rrp']?></span>
+                <span class="big-text rrp">&dollar;<?=$product['rrp']?></span>
                 <?php endif; ?>
             </span>
         </a>

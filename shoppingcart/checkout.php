@@ -94,51 +94,51 @@ if ($products_in_cart) {
 <?= template_header('Cart') ?>
 
 
-<div class="cart content-wrapper">
-    <h1>Shopping Cart</h1>
+<div class="container cart content-wrapper">
+    <p class="text-center big-text2">Shopping Cart</p><br><br>
     
     
     <p style="float:right;">Already have and account? <input style="margin-left:10px; float:right;" type="submit" value="Login" name="Login"></p>
 
-    <form action="index.php?page=placeorder" method="post">
+    <form class="big-text2" action="index.php?page=placeorder" method="post">
         
         <table>
             <thead>
                 <tr>
-                    <td colspan="5" style="text-align:center;">Customer details</td>
+                    <td colspan="5" style="text-align:center;"><p class="big-text2">Customer details</p> </td>
                 </tr>
             </thead>
 
-            <tbody>
+            <tbody class="">
                 <tr>
-                    <td colspan="5" style="text-align:center;">First Name: <input type="text" name="firstname">
+                    <td colspan="5" style="text-align:center; "> <p class="big-text3">First Name:</p>  <input class="border border-bg-800" type="text" name="firstname" required>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="5" style="text-align:center;">Last Name: <input type="text" name="lastname">
+                    <td colspan="5" style="text-align:center; "><p class="big-text3">Last Name:</p> <input class="border border-bg-800" type="text" name="lastname" required>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="5" style="text-align:center;">
-                        Your Email: <input type="email" name="email" placeholder="example@gmail.com" required>
+                    <td colspan="5" style="text-align:center; ">
+                    <p class="big-text3">Email:</p> <input class="border border-bg-800" type="email" name="email" placeholder="example@gmail.com" required>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="5" style="text-align:center;">street: <input type="text" name="street">
+                    <td colspan="5" style="text-align:center; "><p class="big-text3">Street:</p> <input class="border border-bg-800" type="text" name="street" required>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="5" style="text-align:center;">Province: <input type="text" name="province">
+                    <td colspan="5" style="text-align:center; "><p class="big-text3">Province: </p> <input class="border border-bg-800" type="text" name="province" required>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="5" style="text-align:center;">Phone: <input type="text" name="phone">
+                    <td colspan="5" style="text-align:center; "><p class="big-text3">Phone: </p><input class="border border-bg-800" type="text" name="phone" required>
                     </td>
                 </tr>
             </tbody>
         </table>
         </></br></br>
-        <h1>Confirm your order details and place order below</h1>
+        <p class="text-center " style="font-size:30px;">Confirm your order details and place order below</p>
         <table>
             <thead>
                 <tr>
@@ -146,7 +146,7 @@ if ($products_in_cart) {
                     <td colspan="5" style="text-align:center;">Order Details</td>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="">
                 <div class="subtotal">
                 <div class="buttons">
                     <input type="submit" value="Place Order" name="placeorder">

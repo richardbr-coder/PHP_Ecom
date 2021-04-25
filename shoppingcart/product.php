@@ -40,9 +40,9 @@ if (isset($_GET['id'])) {
 
 <?=template_header('Product')?>
 
-<div class="product content-wrapper">
+<div class="center test col4 product content-wrapper">
     <img src="/imgs/<?=$product['img']?>" width="500" height="500" alt="<?=$product['name']?>">
-    <div>
+    <div class="">
         <h1 class="name"><?=$product['name']?></h1>
         <span class="price">
             &dollar;<?=$product['price']?>
